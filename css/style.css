@@ -15,6 +15,11 @@ body {
   align-items: center;
   padding: 20px 70px 20px 32px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .header__menu-button {
@@ -100,7 +105,21 @@ body {
 }
 
 .sidebar {
+  position: fixed;
+  left: 0;
+  top: 114px;
+  width: 12%;
+  height: calc(100% - 114px);
+  overflow-y: auto;
   padding-left: 32px;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  margin-top: 85px;
+  padding-top: 30px;
+  padding-left: 15%;
 }
 
 .nav__title {
@@ -145,4 +164,209 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
+}
+
+.channel {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.channel__title {
+  color: #19202C;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.title__channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channel__text {
+  margin-left: 20px;
+}
+
+.swiper-slide__video-card {
+  max-width: 250px;
+}
+
+.video-card__video-thumb {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.video-thumb__thumb-nail {
+  width: 250px;
+  height: 150px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.video-thumb__video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000;
+  opacity: 0.3;
+  border-radius: 12px;
+  padding: 3px 9px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;  
+}
+
+.video-card__title {
+  color: #19202C;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.video-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #C2C2C2;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.video-card__views {
+  margin-right: 5px;
+}
+
+.video-card__views::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  background-color: #C2C2C2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.slider__channel-buttons {
+  position: absolute;
+  top: 15px;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
+.swiper-slide__recommendations-card {
+  max-width: 300px;
+}
+
+.recommendations {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.recommendations__title {
+  color: #19202C;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+  max-width: 540px;
+}
+
+.slider__recommendations-buttons {
+  position: absolute;
+  top: 15px;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+
+.recommendations-card__recommendations-thumb {
+  width: 540px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.recommendations-thumb__recommendations-thumb-nail {
+  width: 540px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.recommendations-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  color: #C2C2C2;
+  width: 540px;
+}
+
+.recommended-channel {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.recommended-channel__info {
+  margin-left: 20px;
+}
+
+.recommended-channel__text {
+  margin-right: 20px;
+}
+
+.recommended-channel__descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #C2C2C2;
+}
+
+.recommended-channel__buttons {
+  display: flex;
+  align-items: center;
+  width: 260px;
+}
+
+.recommended-channel__btn {
+  position: absolute;
+  top: 15px;
+  right: 19%;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.slider__recommended-channel-buttons {
+  position: absolute;
+  top: 15px;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
 }
